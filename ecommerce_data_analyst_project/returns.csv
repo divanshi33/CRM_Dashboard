@@ -1,0 +1,479 @@
+return_id,order_id,return_date,return_reason,return_status,returned_quantity
+RET00001,ORD001883,2024-01-26,Product damaged,Refunded,1
+RET00002,ORD004144,2024-01-28,Product damaged,Refunded,4
+RET00003,ORD007709,2024-01-23,Quality issue,Approved,1
+RET00004,ORD003702,2024-01-23,Quality issue,Refunded,1
+RET00005,ORD004781,2024-02-03,Changed mind,Refunded,3
+RET00006,ORD001142,2024-01-17,Product damaged,Refunded,1
+RET00007,ORD003300,2024-01-25,Late delivery,Approved,1
+RET00008,ORD002548,2024-02-06,Size issue,Approved,2
+RET00009,ORD007902,2024-02-03,Product not as expected,Refunded,4
+RET00010,ORD004464,2024-02-18,Product not as expected,Refunded,1
+RET00011,ORD000654,2024-02-21,Quality issue,Processed,1
+RET00012,ORD000739,2024-02-25,Quality issue,Refunded,1
+RET00013,ORD004632,2024-02-19,Quality issue,Approved,1
+RET00014,ORD004371,2024-02-19,Product not as expected,Refunded,1
+RET00015,ORD000899,2024-02-29,Size issue,Refunded,1
+RET00016,ORD006226,2024-03-01,Quality issue,Refunded,2
+RET00017,ORD001367,2024-03-02,Size issue,Processed,1
+RET00018,ORD003697,2024-03-15,Product not as expected,Refunded,2
+RET00019,ORD006715,2024-03-09,Quality issue,Refunded,3
+RET00020,ORD007062,2024-02-26,Quality issue,Refunded,2
+RET00021,ORD006907,2024-03-21,Changed mind,Refunded,6
+RET00022,ORD007550,2024-02-25,Product damaged,Refunded,2
+RET00023,ORD003956,2024-03-19,Product not as expected,Refunded,2
+RET00024,ORD007750,2024-03-03,Changed mind,Refunded,1
+RET00025,ORD004262,2024-03-18,Changed mind,Processed,5
+RET00026,ORD001726,2024-03-19,Changed mind,Refunded,2
+RET00027,ORD007255,2024-03-28,Size issue,Approved,1
+RET00028,ORD000479,2024-04-11,Product damaged,Refunded,1
+RET00029,ORD000190,2024-04-11,Size issue,Refunded,1
+RET00030,ORD000562,2024-04-13,Product not as expected,Refunded,1
+RET00031,ORD000347,2024-04-01,Product damaged,Processed,4
+RET00032,ORD003683,2024-04-22,Product not as expected,Approved,3
+RET00033,ORD000829,2024-04-12,Size issue,Processed,1
+RET00034,ORD002641,2024-03-28,Size issue,Refunded,5
+RET00035,ORD003147,2024-04-04,Changed mind,Processed,1
+RET00036,ORD004654,2024-04-11,Size issue,Refunded,1
+RET00037,ORD002747,2024-04-21,Late delivery,Processed,1
+RET00038,ORD003071,2024-04-05,Late delivery,Refunded,1
+RET00039,ORD006617,2024-04-12,Product not as expected,Refunded,2
+RET00040,ORD000543,2024-04-29,Quality issue,Approved,1
+RET00041,ORD004225,2024-04-30,Changed mind,Processed,1
+RET00042,ORD003066,2024-05-01,Size issue,Approved,1
+RET00043,ORD000299,2024-04-21,Wrong product,Approved,1
+RET00044,ORD007870,2024-04-12,Late delivery,Approved,1
+RET00045,ORD002453,2024-04-26,Wrong product,Refunded,4
+RET00046,ORD007981,2024-05-14,Product not as expected,Approved,3
+RET00047,ORD003766,2024-05-12,Size issue,Refunded,1
+RET00048,ORD007997,2024-05-11,Changed mind,Approved,3
+RET00049,ORD003443,2024-05-02,Late delivery,Processed,2
+RET00050,ORD004605,2024-05-19,Wrong product,Approved,2
+RET00051,ORD005050,2024-04-24,Size issue,Refunded,3
+RET00052,ORD002280,2024-05-10,Product damaged,Approved,3
+RET00053,ORD002215,2024-05-16,Size issue,Refunded,2
+RET00054,ORD002086,2024-05-24,Product not as expected,Approved,1
+RET00055,ORD007911,2024-05-25,Changed mind,Approved,2
+RET00056,ORD006794,2024-05-11,Size issue,Refunded,2
+RET00057,ORD001025,2024-05-23,Size issue,Refunded,1
+RET00058,ORD007028,2024-05-30,Wrong product,Approved,4
+RET00059,ORD002253,2024-05-20,Product not as expected,Approved,1
+RET00060,ORD003864,2024-06-02,Wrong product,Refunded,1
+RET00061,ORD001327,2024-05-23,Wrong product,Processed,2
+RET00062,ORD007535,2024-06-03,Product not as expected,Refunded,2
+RET00063,ORD007327,2024-06-10,Size issue,Refunded,1
+RET00064,ORD005590,2024-06-05,Product not as expected,Refunded,2
+RET00065,ORD007061,2024-05-17,Product damaged,Refunded,1
+RET00066,ORD001720,2024-05-22,Product not as expected,Approved,1
+RET00067,ORD000355,2024-05-23,Size issue,Refunded,1
+RET00068,ORD004209,2024-05-22,Changed mind,Approved,2
+RET00069,ORD005895,2024-06-13,Size issue,Approved,1
+RET00070,ORD006260,2024-06-03,Wrong product,Processed,6
+RET00071,ORD004763,2024-05-25,Product not as expected,Approved,1
+RET00072,ORD005315,2024-06-01,Size issue,Approved,2
+RET00073,ORD003024,2024-06-04,Size issue,Processed,2
+RET00074,ORD001295,2024-06-15,Size issue,Approved,4
+RET00075,ORD003779,2024-06-01,Size issue,Processed,2
+RET00076,ORD004462,2024-06-03,Product damaged,Refunded,3
+RET00077,ORD003171,2024-06-02,Changed mind,Processed,1
+RET00078,ORD007942,2024-06-02,Changed mind,Refunded,4
+RET00079,ORD004226,2024-06-19,Changed mind,Approved,4
+RET00080,ORD007502,2024-06-29,Changed mind,Refunded,1
+RET00081,ORD003149,2024-06-14,Size issue,Refunded,4
+RET00082,ORD000483,2024-06-10,Product not as expected,Refunded,1
+RET00083,ORD002135,2024-06-24,Wrong product,Approved,5
+RET00084,ORD003290,2024-06-11,Changed mind,Refunded,3
+RET00085,ORD004293,2024-06-26,Quality issue,Refunded,3
+RET00086,ORD004665,2024-06-17,Product damaged,Refunded,1
+RET00087,ORD005929,2024-07-02,Product damaged,Refunded,1
+RET00088,ORD001876,2024-06-18,Late delivery,Approved,3
+RET00089,ORD002090,2024-07-01,Quality issue,Refunded,2
+RET00090,ORD003787,2024-06-19,Product not as expected,Refunded,1
+RET00091,ORD003042,2024-06-24,Product damaged,Processed,1
+RET00092,ORD007926,2024-07-09,Product damaged,Processed,1
+RET00093,ORD007468,2024-06-27,Late delivery,Refunded,3
+RET00094,ORD005642,2024-07-17,Quality issue,Approved,1
+RET00095,ORD005306,2024-06-27,Late delivery,Refunded,2
+RET00096,ORD000693,2024-07-14,Quality issue,Approved,3
+RET00097,ORD004454,2024-07-02,Quality issue,Refunded,1
+RET00098,ORD004646,2024-07-14,Wrong product,Refunded,1
+RET00099,ORD000475,2024-07-12,Size issue,Refunded,6
+RET00100,ORD001011,2024-07-07,Late delivery,Processed,2
+RET00101,ORD001350,2024-07-17,Size issue,Refunded,1
+RET00102,ORD000792,2024-07-31,Size issue,Refunded,3
+RET00103,ORD001188,2024-07-08,Product damaged,Processed,3
+RET00104,ORD007949,2024-07-08,Size issue,Refunded,4
+RET00105,ORD003599,2024-08-07,Quality issue,Refunded,1
+RET00106,ORD003058,2024-08-07,Quality issue,Approved,4
+RET00107,ORD000578,2024-07-31,Late delivery,Refunded,1
+RET00108,ORD001574,2024-08-10,Product not as expected,Processed,2
+RET00109,ORD004458,2024-07-18,Wrong product,Approved,1
+RET00110,ORD000732,2024-07-17,Wrong product,Approved,2
+RET00111,ORD003629,2024-07-24,Changed mind,Refunded,3
+RET00112,ORD005775,2024-07-30,Changed mind,Refunded,2
+RET00113,ORD004239,2024-08-01,Size issue,Refunded,6
+RET00114,ORD007717,2024-08-02,Changed mind,Refunded,2
+RET00115,ORD004688,2024-08-02,Size issue,Approved,5
+RET00116,ORD004707,2024-07-23,Changed mind,Processed,2
+RET00117,ORD003025,2024-08-01,Changed mind,Approved,2
+RET00118,ORD006429,2024-07-28,Wrong product,Refunded,2
+RET00119,ORD006626,2024-07-28,Changed mind,Refunded,3
+RET00120,ORD004866,2024-08-24,Changed mind,Approved,2
+RET00121,ORD000676,2024-08-20,Product damaged,Approved,2
+RET00122,ORD000079,2024-08-23,Wrong product,Refunded,3
+RET00123,ORD005847,2024-08-04,Changed mind,Approved,3
+RET00124,ORD003301,2024-08-13,Size issue,Processed,3
+RET00125,ORD001736,2024-08-23,Product not as expected,Refunded,1
+RET00126,ORD000518,2024-08-19,Product damaged,Processed,2
+RET00127,ORD001734,2024-08-28,Product damaged,Approved,1
+RET00128,ORD001301,2024-08-12,Quality issue,Refunded,2
+RET00129,ORD001255,2024-08-06,Changed mind,Refunded,1
+RET00130,ORD006574,2024-08-24,Changed mind,Refunded,1
+RET00131,ORD000111,2024-08-27,Product not as expected,Refunded,2
+RET00132,ORD006913,2024-08-26,Size issue,Approved,5
+RET00133,ORD007333,2024-08-19,Product not as expected,Refunded,4
+RET00134,ORD002344,2024-08-17,Size issue,Refunded,3
+RET00135,ORD000351,2024-09-04,Size issue,Approved,3
+RET00136,ORD003081,2024-08-24,Wrong product,Approved,3
+RET00137,ORD000695,2024-09-13,Product damaged,Refunded,4
+RET00138,ORD004990,2024-09-13,Product damaged,Approved,3
+RET00139,ORD004256,2024-09-02,Size issue,Refunded,1
+RET00140,ORD005668,2024-09-04,Product damaged,Processed,1
+RET00141,ORD001214,2024-09-04,Wrong product,Processed,2
+RET00142,ORD000325,2024-09-25,Changed mind,Refunded,2
+RET00143,ORD001850,2024-09-08,Product damaged,Approved,1
+RET00144,ORD006585,2024-09-07,Size issue,Approved,2
+RET00145,ORD003279,2024-10-02,Product damaged,Approved,1
+RET00146,ORD007490,2024-10-02,Size issue,Refunded,2
+RET00147,ORD005003,2024-09-15,Late delivery,Approved,2
+RET00148,ORD002736,2024-09-20,Product not as expected,Refunded,5
+RET00149,ORD000892,2024-09-16,Product not as expected,Refunded,2
+RET00150,ORD004753,2024-09-30,Size issue,Refunded,2
+RET00151,ORD004574,2024-10-14,Quality issue,Refunded,2
+RET00152,ORD007876,2024-10-09,Product damaged,Refunded,4
+RET00153,ORD005645,2024-09-27,Product damaged,Approved,7
+RET00154,ORD000416,2024-10-05,Size issue,Refunded,1
+RET00155,ORD001191,2024-09-27,Product damaged,Processed,4
+RET00156,ORD006182,2024-10-09,Size issue,Processed,2
+RET00157,ORD006664,2024-10-03,Changed mind,Approved,2
+RET00158,ORD002306,2024-10-14,Size issue,Processed,2
+RET00159,ORD004549,2024-10-09,Size issue,Approved,4
+RET00160,ORD003381,2024-10-27,Wrong product,Refunded,3
+RET00161,ORD005108,2024-10-08,Size issue,Refunded,2
+RET00162,ORD005662,2024-10-15,Quality issue,Refunded,1
+RET00163,ORD006746,2024-10-10,Product damaged,Processed,2
+RET00164,ORD005735,2024-11-01,Product not as expected,Processed,1
+RET00165,ORD006078,2024-10-20,Product not as expected,Refunded,1
+RET00166,ORD001759,2024-10-19,Product not as expected,Refunded,3
+RET00167,ORD005140,2024-10-25,Changed mind,Refunded,2
+RET00168,ORD002068,2024-10-25,Size issue,Approved,3
+RET00169,ORD007503,2024-10-12,Product not as expected,Approved,1
+RET00170,ORD003793,2024-10-27,Size issue,Approved,10
+RET00171,ORD006303,2024-11-06,Wrong product,Refunded,5
+RET00172,ORD005935,2024-11-05,Changed mind,Processed,3
+RET00173,ORD000115,2024-10-30,Quality issue,Approved,6
+RET00174,ORD001419,2024-10-25,Changed mind,Refunded,3
+RET00175,ORD001170,2024-10-27,Quality issue,Approved,2
+RET00176,ORD004984,2024-10-31,Product not as expected,Approved,2
+RET00177,ORD002423,2024-10-28,Late delivery,Approved,3
+RET00178,ORD003941,2024-10-28,Product not as expected,Processed,1
+RET00179,ORD005025,2024-10-27,Size issue,Processed,2
+RET00180,ORD007246,2024-11-08,Changed mind,Refunded,2
+RET00181,ORD005918,2024-11-19,Product not as expected,Refunded,1
+RET00182,ORD006212,2024-11-12,Size issue,Approved,1
+RET00183,ORD001457,2024-11-15,Late delivery,Processed,2
+RET00184,ORD002197,2024-11-17,Changed mind,Refunded,2
+RET00185,ORD000373,2024-11-20,Product not as expected,Approved,2
+RET00186,ORD002821,2024-11-01,Changed mind,Refunded,2
+RET00187,ORD006649,2024-11-07,Quality issue,Refunded,5
+RET00188,ORD005326,2024-11-07,Size issue,Approved,1
+RET00189,ORD001557,2024-11-03,Size issue,Processed,1
+RET00190,ORD001903,2024-11-03,Product not as expected,Approved,1
+RET00191,ORD002238,2024-11-15,Product damaged,Refunded,5
+RET00192,ORD004513,2024-11-27,Product not as expected,Processed,2
+RET00193,ORD000635,2024-11-27,Product damaged,Approved,1
+RET00194,ORD001319,2024-11-07,Quality issue,Approved,1
+RET00195,ORD000726,2024-11-08,Changed mind,Refunded,2
+RET00196,ORD003881,2024-11-19,Size issue,Refunded,2
+RET00197,ORD007165,2024-11-23,Wrong product,Refunded,5
+RET00198,ORD006993,2024-11-16,Product not as expected,Approved,4
+RET00199,ORD002059,2024-12-01,Product damaged,Approved,1
+RET00200,ORD003432,2024-11-21,Quality issue,Approved,2
+RET00201,ORD001551,2024-12-01,Changed mind,Approved,1
+RET00202,ORD004410,2024-11-27,Product not as expected,Refunded,3
+RET00203,ORD007934,2024-11-20,Product damaged,Processed,2
+RET00204,ORD005670,2024-11-19,Wrong product,Approved,1
+RET00205,ORD000096,2024-12-04,Product damaged,Processed,1
+RET00206,ORD000957,2024-11-24,Wrong product,Processed,1
+RET00207,ORD002962,2024-11-23,Changed mind,Approved,2
+RET00208,ORD002758,2024-12-15,Changed mind,Approved,4
+RET00209,ORD006056,2024-12-18,Product not as expected,Refunded,1
+RET00210,ORD007392,2024-12-10,Product not as expected,Refunded,1
+RET00211,ORD000424,2024-12-15,Product not as expected,Approved,1
+RET00212,ORD007360,2024-12-11,Wrong product,Approved,3
+RET00213,ORD006076,2024-12-02,Changed mind,Refunded,3
+RET00214,ORD007436,2024-12-28,Quality issue,Approved,5
+RET00215,ORD006266,2024-12-14,Changed mind,Refunded,2
+RET00216,ORD003103,2024-12-19,Wrong product,Processed,1
+RET00217,ORD007835,2024-12-15,Changed mind,Processed,1
+RET00218,ORD001967,2024-12-30,Product damaged,Approved,2
+RET00219,ORD002471,2024-12-17,Product not as expected,Approved,1
+RET00220,ORD007249,2025-01-09,Size issue,Approved,4
+RET00221,ORD003706,2024-12-22,Size issue,Refunded,1
+RET00222,ORD000360,2025-01-10,Wrong product,Processed,2
+RET00223,ORD005582,2024-12-29,Product not as expected,Refunded,1
+RET00224,ORD000117,2024-12-20,Size issue,Processed,2
+RET00225,ORD006373,2025-01-12,Late delivery,Refunded,1
+RET00226,ORD001468,2025-01-08,Product damaged,Processed,1
+RET00227,ORD007033,2025-01-13,Size issue,Approved,2
+RET00228,ORD005616,2024-12-23,Product damaged,Processed,1
+RET00229,ORD003552,2024-12-25,Late delivery,Refunded,1
+RET00230,ORD006103,2025-01-16,Size issue,Approved,4
+RET00231,ORD005944,2025-01-21,Changed mind,Processed,1
+RET00232,ORD006204,2024-12-29,Changed mind,Refunded,1
+RET00233,ORD002689,2025-01-19,Late delivery,Refunded,3
+RET00234,ORD001453,2025-01-18,Quality issue,Approved,2
+RET00235,ORD007562,2025-01-04,Size issue,Approved,2
+RET00236,ORD002851,2025-01-28,Size issue,Processed,3
+RET00237,ORD001540,2025-01-30,Changed mind,Refunded,3
+RET00238,ORD000168,2025-01-22,Wrong product,Approved,2
+RET00239,ORD007994,2025-01-07,Wrong product,Approved,1
+RET00240,ORD005459,2025-01-11,Product damaged,Processed,3
+RET00241,ORD003606,2025-01-25,Product damaged,Approved,1
+RET00242,ORD003265,2025-01-17,Product not as expected,Approved,3
+RET00243,ORD000784,2025-02-13,Product not as expected,Refunded,3
+RET00244,ORD005324,2025-02-08,Product damaged,Approved,2
+RET00245,ORD004648,2025-02-17,Size issue,Approved,2
+RET00246,ORD002874,2025-02-06,Product damaged,Approved,1
+RET00247,ORD007849,2025-02-16,Wrong product,Processed,2
+RET00248,ORD000214,2025-02-10,Quality issue,Refunded,2
+RET00249,ORD001534,2025-02-10,Product not as expected,Approved,1
+RET00250,ORD001598,2025-01-28,Size issue,Refunded,2
+RET00251,ORD001508,2025-02-03,Quality issue,Refunded,2
+RET00252,ORD002945,2025-03-01,Quality issue,Processed,8
+RET00253,ORD006011,2025-03-03,Size issue,Refunded,1
+RET00254,ORD003986,2025-02-19,Wrong product,Processed,1
+RET00255,ORD001230,2025-02-17,Quality issue,Approved,3
+RET00256,ORD002712,2025-03-05,Late delivery,Refunded,2
+RET00257,ORD005447,2025-02-21,Size issue,Processed,8
+RET00258,ORD003041,2025-03-07,Size issue,Processed,1
+RET00259,ORD005898,2025-03-10,Product not as expected,Refunded,2
+RET00260,ORD001391,2025-02-28,Late delivery,Approved,1
+RET00261,ORD004701,2025-03-02,Product damaged,Approved,1
+RET00262,ORD000387,2025-03-11,Changed mind,Approved,1
+RET00263,ORD004926,2025-02-28,Size issue,Processed,3
+RET00264,ORD001711,2025-03-14,Size issue,Processed,1
+RET00265,ORD006833,2025-03-03,Changed mind,Refunded,3
+RET00266,ORD001084,2025-03-14,Quality issue,Refunded,1
+RET00267,ORD006239,2025-03-23,Changed mind,Refunded,4
+RET00268,ORD000187,2025-03-27,Changed mind,Approved,1
+RET00269,ORD001105,2025-03-19,Product not as expected,Refunded,7
+RET00270,ORD007383,2025-03-23,Wrong product,Approved,2
+RET00271,ORD003016,2025-03-22,Changed mind,Processed,2
+RET00272,ORD003649,2025-03-16,Wrong product,Refunded,2
+RET00273,ORD003005,2025-04-03,Changed mind,Refunded,5
+RET00274,ORD007553,2025-04-12,Changed mind,Refunded,4
+RET00275,ORD005068,2025-04-14,Size issue,Approved,1
+RET00276,ORD004341,2025-04-12,Changed mind,Processed,2
+RET00277,ORD005093,2025-04-04,Quality issue,Processed,1
+RET00278,ORD006004,2025-03-23,Product damaged,Processed,5
+RET00279,ORD005607,2025-04-11,Late delivery,Processed,4
+RET00280,ORD000525,2025-04-17,Changed mind,Processed,4
+RET00281,ORD001609,2025-04-10,Product not as expected,Processed,6
+RET00282,ORD005887,2025-04-04,Product not as expected,Approved,3
+RET00283,ORD004355,2025-04-13,Product damaged,Approved,1
+RET00284,ORD003056,2025-04-19,Product damaged,Processed,4
+RET00285,ORD006787,2025-04-29,Changed mind,Approved,1
+RET00286,ORD000050,2025-04-19,Size issue,Processed,5
+RET00287,ORD000573,2025-04-18,Changed mind,Processed,1
+RET00288,ORD004939,2025-04-09,Product not as expected,Approved,5
+RET00289,ORD004084,2025-04-16,Size issue,Approved,3
+RET00290,ORD005554,2025-04-28,Product not as expected,Approved,4
+RET00291,ORD002105,2025-05-06,Size issue,Refunded,1
+RET00292,ORD004081,2025-05-03,Product not as expected,Processed,3
+RET00293,ORD001156,2025-05-07,Quality issue,Approved,2
+RET00294,ORD006417,2025-05-09,Wrong product,Refunded,6
+RET00295,ORD004538,2025-04-25,Product damaged,Processed,1
+RET00296,ORD001178,2025-04-23,Size issue,Processed,3
+RET00297,ORD000054,2025-04-24,Size issue,Approved,1
+RET00298,ORD002707,2025-05-03,Wrong product,Processed,1
+RET00299,ORD002259,2025-04-30,Product not as expected,Processed,1
+RET00300,ORD000548,2025-05-06,Product damaged,Processed,1
+RET00301,ORD003197,2025-05-10,Changed mind,Approved,2
+RET00302,ORD004376,2025-05-30,Product damaged,Refunded,1
+RET00303,ORD000988,2025-05-26,Quality issue,Approved,4
+RET00304,ORD005923,2025-05-27,Changed mind,Refunded,1
+RET00305,ORD003254,2025-05-20,Changed mind,Approved,2
+RET00306,ORD004271,2025-05-14,Product not as expected,Refunded,4
+RET00307,ORD004258,2025-05-25,Product not as expected,Approved,3
+RET00308,ORD002399,2025-05-26,Product damaged,Processed,1
+RET00309,ORD000639,2025-05-21,Quality issue,Processed,2
+RET00310,ORD004422,2025-06-10,Changed mind,Refunded,1
+RET00311,ORD006871,2025-06-03,Late delivery,Processed,1
+RET00312,ORD007555,2025-05-26,Product not as expected,Approved,1
+RET00313,ORD003667,2025-05-28,Product damaged,Processed,2
+RET00314,ORD003627,2025-06-06,Product damaged,Approved,1
+RET00315,ORD007168,2025-06-15,Wrong product,Approved,2
+RET00316,ORD002906,2025-05-29,Size issue,Approved,3
+RET00317,ORD001133,2025-06-17,Size issue,Refunded,3
+RET00318,ORD002709,2025-06-21,Product not as expected,Processed,3
+RET00319,ORD003206,2025-06-13,Size issue,Refunded,4
+RET00320,ORD004403,2025-06-11,Late delivery,Refunded,1
+RET00321,ORD002644,2025-06-27,Changed mind,Processed,2
+RET00322,ORD002567,2025-06-15,Size issue,Refunded,2
+RET00323,ORD007923,2025-07-01,Late delivery,Refunded,1
+RET00324,ORD000997,2025-06-16,Product damaged,Processed,2
+RET00325,ORD001037,2025-06-24,Changed mind,Refunded,1
+RET00326,ORD005704,2025-06-20,Product damaged,Refunded,2
+RET00327,ORD004200,2025-06-22,Product not as expected,Processed,2
+RET00328,ORD005390,2025-06-29,Changed mind,Refunded,2
+RET00329,ORD006730,2025-07-05,Late delivery,Refunded,3
+RET00330,ORD005620,2025-06-23,Wrong product,Approved,1
+RET00331,ORD003679,2025-06-20,Product not as expected,Approved,1
+RET00332,ORD006285,2025-07-03,Size issue,Refunded,3
+RET00333,ORD007262,2025-06-18,Size issue,Processed,2
+RET00334,ORD000680,2025-06-19,Quality issue,Approved,1
+RET00335,ORD004813,2025-06-18,Size issue,Refunded,5
+RET00336,ORD000443,2025-07-19,Changed mind,Approved,3
+RET00337,ORD001298,2025-07-10,Quality issue,Refunded,3
+RET00338,ORD006724,2025-06-28,Quality issue,Approved,2
+RET00339,ORD005938,2025-07-09,Size issue,Processed,6
+RET00340,ORD006018,2025-07-09,Size issue,Approved,4
+RET00341,ORD002205,2025-07-13,Changed mind,Processed,2
+RET00342,ORD006918,2025-07-19,Size issue,Processed,3
+RET00343,ORD005141,2025-07-09,Product not as expected,Processed,1
+RET00344,ORD003070,2025-07-07,Wrong product,Refunded,1
+RET00345,ORD006406,2025-07-08,Product damaged,Processed,2
+RET00346,ORD005734,2025-07-16,Quality issue,Refunded,1
+RET00347,ORD001697,2025-07-02,Product damaged,Approved,2
+RET00348,ORD000527,2025-07-23,Changed mind,Processed,4
+RET00349,ORD007833,2025-07-04,Product not as expected,Approved,4
+RET00350,ORD005230,2025-07-09,Product not as expected,Processed,1
+RET00351,ORD003538,2025-07-22,Changed mind,Processed,1
+RET00352,ORD004470,2025-07-26,Wrong product,Refunded,2
+RET00353,ORD007348,2025-07-16,Product not as expected,Approved,3
+RET00354,ORD002271,2025-07-30,Product damaged,Approved,5
+RET00355,ORD002582,2025-08-11,Quality issue,Refunded,4
+RET00356,ORD005424,2025-08-08,Size issue,Processed,2
+RET00357,ORD000455,2025-08-17,Product damaged,Refunded,1
+RET00358,ORD007505,2025-08-08,Product damaged,Approved,2
+RET00359,ORD002813,2025-08-21,Quality issue,Refunded,1
+RET00360,ORD007700,2025-08-05,Changed mind,Approved,2
+RET00361,ORD002420,2025-08-08,Changed mind,Processed,3
+RET00362,ORD003337,2025-08-29,Late delivery,Approved,2
+RET00363,ORD000526,2025-08-28,Changed mind,Processed,2
+RET00364,ORD000490,2025-09-01,Wrong product,Refunded,1
+RET00365,ORD000696,2025-09-04,Product damaged,Approved,1
+RET00366,ORD004667,2025-09-07,Product damaged,Refunded,4
+RET00367,ORD004969,2025-09-13,Product not as expected,Approved,2
+RET00368,ORD004522,2025-08-30,Late delivery,Refunded,2
+RET00369,ORD000823,2025-09-14,Late delivery,Processed,1
+RET00370,ORD005385,2025-09-02,Quality issue,Approved,2
+RET00371,ORD000176,2025-09-10,Late delivery,Approved,1
+RET00372,ORD004945,2025-09-13,Size issue,Processed,3
+RET00373,ORD002966,2025-09-20,Wrong product,Refunded,1
+RET00374,ORD006606,2025-09-12,Product not as expected,Processed,1
+RET00375,ORD003874,2025-09-27,Changed mind,Refunded,3
+RET00376,ORD005532,2025-09-06,Size issue,Processed,1
+RET00377,ORD005535,2025-09-28,Product damaged,Refunded,2
+RET00378,ORD002980,2025-09-17,Product not as expected,Approved,3
+RET00379,ORD006611,2025-09-15,Late delivery,Refunded,1
+RET00380,ORD002519,2025-09-16,Changed mind,Refunded,3
+RET00381,ORD003033,2025-09-13,Quality issue,Refunded,3
+RET00382,ORD006946,2025-09-20,Product damaged,Approved,2
+RET00383,ORD000072,2025-09-27,Product damaged,Approved,2
+RET00384,ORD005635,2025-10-03,Product damaged,Refunded,2
+RET00385,ORD007772,2025-10-07,Size issue,Approved,1
+RET00386,ORD003416,2025-09-24,Size issue,Approved,2
+RET00387,ORD006217,2025-10-16,Changed mind,Refunded,1
+RET00388,ORD007384,2025-10-12,Late delivery,Refunded,5
+RET00389,ORD000778,2025-10-02,Product damaged,Approved,2
+RET00390,ORD001957,2025-09-28,Changed mind,Refunded,2
+RET00391,ORD000269,2025-10-17,Product damaged,Processed,5
+RET00392,ORD006713,2025-10-06,Product damaged,Processed,1
+RET00393,ORD007098,2025-10-07,Product not as expected,Approved,1
+RET00394,ORD001315,2025-10-26,Changed mind,Refunded,1
+RET00395,ORD000856,2025-10-09,Size issue,Refunded,4
+RET00396,ORD007180,2025-10-09,Size issue,Processed,1
+RET00397,ORD006242,2025-10-29,Changed mind,Refunded,1
+RET00398,ORD004384,2025-11-05,Size issue,Approved,1
+RET00399,ORD004900,2025-10-15,Product damaged,Refunded,2
+RET00400,ORD007329,2025-10-30,Size issue,Refunded,1
+RET00401,ORD001561,2025-10-25,Changed mind,Approved,1
+RET00402,ORD004490,2025-10-30,Late delivery,Approved,2
+RET00403,ORD007437,2025-10-15,Size issue,Processed,2
+RET00404,ORD007986,2025-11-11,Wrong product,Refunded,2
+RET00405,ORD002848,2025-10-30,Size issue,Refunded,2
+RET00406,ORD006082,2025-11-14,Size issue,Approved,1
+RET00407,ORD002311,2025-11-07,Changed mind,Refunded,1
+RET00408,ORD002022,2025-10-26,Late delivery,Refunded,3
+RET00409,ORD006333,2025-11-01,Product damaged,Refunded,4
+RET00410,ORD003872,2025-10-22,Product not as expected,Refunded,2
+RET00411,ORD003698,2025-11-16,Product not as expected,Approved,3
+RET00412,ORD007473,2025-11-02,Product not as expected,Refunded,1
+RET00413,ORD002872,2025-11-09,Quality issue,Approved,1
+RET00414,ORD007450,2025-11-13,Late delivery,Approved,1
+RET00415,ORD001962,2025-10-28,Quality issue,Approved,2
+RET00416,ORD006525,2025-10-28,Changed mind,Refunded,1
+RET00417,ORD000340,2025-10-27,Product damaged,Approved,4
+RET00418,ORD003499,2025-11-09,Late delivery,Refunded,1
+RET00419,ORD000302,2025-11-17,Changed mind,Approved,1
+RET00420,ORD004494,2025-11-26,Size issue,Refunded,1
+RET00421,ORD004231,2025-11-17,Product not as expected,Refunded,4
+RET00422,ORD000773,2025-11-16,Changed mind,Refunded,4
+RET00423,ORD002024,2025-11-09,Size issue,Approved,2
+RET00424,ORD006678,2025-11-29,Quality issue,Refunded,3
+RET00425,ORD006763,2025-11-23,Wrong product,Refunded,2
+RET00426,ORD000098,2025-11-13,Product damaged,Refunded,1
+RET00427,ORD001599,2025-11-17,Product damaged,Approved,2
+RET00428,ORD007947,2025-11-30,Wrong product,Refunded,3
+RET00429,ORD007219,2025-11-22,Quality issue,Processed,1
+RET00430,ORD007418,2025-12-01,Size issue,Approved,3
+RET00431,ORD003165,2025-12-05,Changed mind,Approved,2
+RET00432,ORD006745,2025-12-03,Quality issue,Refunded,2
+RET00433,ORD004619,2025-11-15,Size issue,Approved,2
+RET00434,ORD001582,2025-11-19,Size issue,Refunded,2
+RET00435,ORD002831,2025-12-02,Product damaged,Refunded,1
+RET00436,ORD000734,2025-11-21,Changed mind,Refunded,1
+RET00437,ORD006723,2025-12-09,Changed mind,Approved,3
+RET00438,ORD003593,2025-12-01,Product not as expected,Processed,1
+RET00439,ORD005711,2025-12-01,Product damaged,Processed,4
+RET00440,ORD004378,2025-12-10,Changed mind,Refunded,2
+RET00441,ORD001034,2025-12-10,Product damaged,Approved,2
+RET00442,ORD003438,2025-12-08,Size issue,Approved,3
+RET00443,ORD001267,2025-12-18,Changed mind,Refunded,1
+RET00444,ORD004607,2025-11-27,Size issue,Processed,4
+RET00445,ORD000024,2025-12-19,Late delivery,Processed,2
+RET00446,ORD004212,2025-12-21,Product damaged,Approved,1
+RET00447,ORD002207,2025-12-18,Product not as expected,Refunded,4
+RET00448,ORD001877,2025-12-21,Wrong product,Approved,1
+RET00449,ORD004438,2025-12-15,Quality issue,Processed,2
+RET00450,ORD000938,2025-12-08,Product not as expected,Processed,2
+RET00451,ORD007708,2025-12-13,Product damaged,Refunded,1
+RET00452,ORD007115,2025-12-20,Wrong product,Processed,2
+RET00453,ORD006356,2025-12-17,Late delivery,Processed,2
+RET00454,ORD000769,2025-12-20,Product damaged,Refunded,8
+RET00455,ORD001802,2025-12-14,Size issue,Refunded,6
+RET00456,ORD005864,2026-01-05,Product damaged,Refunded,3
+RET00457,ORD000546,2025-12-15,Changed mind,Refunded,2
+RET00458,ORD005726,2025-12-11,Product damaged,Processed,1
+RET00459,ORD007701,2025-12-25,Product not as expected,Refunded,1
+RET00460,ORD000093,2026-01-05,Quality issue,Refunded,3
+RET00461,ORD000011,2026-01-04,Size issue,Refunded,1
+RET00462,ORD007122,2025-12-19,Wrong product,Refunded,2
+RET00463,ORD002757,2025-12-30,Product not as expected,Refunded,2
+RET00464,ORD006238,2025-12-16,Product damaged,Refunded,1
+RET00465,ORD003699,2025-12-24,Wrong product,Refunded,2
+RET00466,ORD003456,2026-01-08,Product damaged,Refunded,1
+RET00467,ORD001097,2026-01-01,Late delivery,Approved,2
+RET00468,ORD002882,2026-01-09,Product not as expected,Processed,1
+RET00469,ORD005251,2026-01-03,Quality issue,Processed,3
+RET00470,ORD001476,2026-01-13,Product damaged,Refunded,2
+RET00471,ORD002003,2026-01-12,Size issue,Refunded,1
+RET00472,ORD007197,2026-01-07,Product damaged,Refunded,1
+RET00473,ORD004343,2026-01-13,Quality issue,Approved,1
+RET00474,ORD007674,2026-01-21,Wrong product,Processed,1
+RET00475,ORD003243,2026-01-09,Product not as expected,Refunded,1
+RET00476,ORD000706,2026-01-01,Product damaged,Refunded,1
+RET00477,ORD003654,2026-01-07,Product damaged,Refunded,2
+RET00478,ORD002131,2026-01-09,Late delivery,Refunded,4

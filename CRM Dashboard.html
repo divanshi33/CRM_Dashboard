@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>CRM Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--bg:#f4f5f8;--card:#fff;--tx:#161a23;--mut:#6b7385;--bd:#e4e7ee;--ac:#3a5bd9;--g:#17935c;--a:#c47a0a;--r:#d03b3b;--gb:#e3f5ec;--ab:#fdf1dc;--rb:#fce6e6;--ab2:#e8edfd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1219;--card:#181c26;--tx:#eceff5;--mut:#98a1b5;--bd:#272d3b;--ac:#7c9bff;--g:#4cc790;--a:#e8a93d;--r:#ef7676;--gb:#16322a;--ab:#38301a;--rb:#3a1f22;--ab2:#1f2847}}
+:root[data-theme="dark"]{--bg:#0f1219;--card:#181c26;--tx:#eceff5;--mut:#98a1b5;--bd:#272d3b;--ac:#7c9bff;--g:#4cc790;--a:#e8a93d;--r:#ef7676;--gb:#16322a;--ab:#38301a;--rb:#3a1f22;--ab2:#1f2847}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.w{max-width:1280px;margin:0 auto;padding:20px 16px 70px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
+h1{font-size:22px;margin:0}h1+p{margin:2px 0 0;color:var(--mut);font-size:13px}
+h2{font-size:15px;margin:0 0 12px}
+.k{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:14px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px;min-width:0}
+.k .c b{display:block;font-size:24px;margin-top:4px;letter-spacing:-.5px}.k small{color:var(--mut);font-size:12px}
+.g{display:grid;gap:14px;margin-bottom:14px}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.ch{position:relative;height:230px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.chip{font-size:12px;background:var(--ab2);color:var(--ac);padding:3px 9px;border-radius:99px}
+.ov{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--mut);font-weight:500;font-size:12px;padding:6px 8px;border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:8px;border-bottom:1px solid var(--bd);white-space:nowrap}tr:last-child td{border:0}
+.b{font-size:11px;padding:2px 8px;border-radius:99px;font-weight:600}
+.bg{background:var(--gb);color:var(--g)}.ba{background:var(--ab);color:var(--a)}.br{background:var(--rb);color:var(--r)}.bn{background:var(--ab2);color:var(--ac)}
+.pipe{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:10px;overflow-x:auto;padding-bottom:6px}
+.col{background:var(--bg);border-radius:10px;padding:8px;min-height:140px}
+.col h3{font-size:12px;margin:2px 4px 8px;display:flex;justify-content:space-between;color:var(--mut)}
+.d{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:9px 10px;margin-bottom:8px;cursor:grab;font-size:13px}
+.d span{display:block;color:var(--mut);font-size:11.5px}.d b{color:var(--ac)}.col.o{outline:2px dashed var(--ac)}
+.tabs{display:flex;gap:6px;margin-bottom:10px}.tabs button,.btn{font:inherit;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:6px 12px;border-radius:8px;cursor:pointer}
+.tabs button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.fab{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;border:0;background:var(--ac);color:#fff;font-size:30px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.28);z-index:5}
+dialog{border:1px solid var(--bd);border-radius:14px;background:var(--card);color:var(--tx);padding:20px;width:min(380px,92vw)}
+dialog::backdrop{background:rgba(0,0,0,.45)}dialog label{display:block;font-size:12px;color:var(--mut);margin:10px 0 3px}
+dialog input,dialog select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit}
+.pri{background:var(--ac);color:#fff;border-color:var(--ac)}.note{color:var(--mut);font-size:12px;margin:8px 0 0}
+</style></head><body><div class="w">
+<header><div><h1>CRM Dashboard</h1><p>Data through 31 Dec 2025 &middot; amounts in &#8377;</p></div><button class="btn pri" onclick="op()">+ Add lead</button></header>
+<div class="k" id="k"></div>
+<div class="g g2">
+<div class="c"><h2>Leads &amp; conversion by platform</h2><div class="ch"><canvas id="c1"></canvas></div><div class="chips" id="cv"></div></div>
+<div class="c"><h2>Monthly revenue</h2><div class="ch"><canvas id="c2"></canvas></div></div>
+</div>
+<div class="g g3">
+<div class="c"><h2>Top selling products (revenue)</h2><div class="ch"><canvas id="c3"></canvas></div></div>
+<div class="c" style="grid-column:span 2;min-width:min(100%,300px)"><h2>Leads to follow up</h2><div class="ov"><table id="lt"></table></div><p class="note">Leads = customers who signed up but haven't ordered yet.</p></div>
+</div>
+<div class="c" style="margin-bottom:14px"><h2>Bulk deals pipeline <span class="note">&middot; drag cards between stages</span></h2><div class="pipe" id="pp"></div></div>
+<div class="c"><h2>Customers needing attention</h2><div class="tabs" id="tb"></div><div class="ov"><table id="ct"></table></div><p class="note" id="cn"></p></div>
+</div>
+<button class="fab" onclick="op()" aria-label="Add lead">+</button>
+<dialog id="dg"><h2>Add a lead</h2>
+<label>Name</label><input id="fn" placeholder="Customer or company"><label>Phone / email</label><input id="fp">
+<label>Platform</label><select id="fl"><option>Website</option><option>Mobile App</option><option>Marketplace</option></select>
+<label>Bulk deal value (&#8377;, optional)</label><input id="fv" type="number" min="0">
+<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:16px"><button class="btn" onclick="dg.close()">Cancel</button><button class="btn pri" onclick="add()">Save lead</button></div></dialog>
+<script>
+const D={"K":{"rev":32766693,"orders":8000,"cust":3000,"aov":4531,"ret":6.0,"pend":1833937},"S":{"lost":1280,"active":973,"risk":522,"new":225},"m":[["2024-01",1121303],["2024-02",1256232],["2024-03",1223289],["2024-04",1409158],["2024-05",1196837],["2024-06",1471741],["2024-07",1585427],["2024-08",1192547],["2024-09",1305725],["2024-10",1778280],["2024-11",1576333],["2024-12",1568310],["2025-01",1163319],["2025-02",1309663],["2025-03",1267907],["2025-04",1138416],["2025-05",1148188],["2025-06",1628921],["2025-07",1435769],["2025-08",1115036],["2025-09",1131070],["2025-10",1718549],["2025-11",1525265],["2025-12",1499409]],"ch":[["Marketplace",1585,1427],["Mobile App",3033,2724],["Website",3382,3081]],"tp":[["Air Fryer 1",2878723,524],["Air Fryer 4",2362932,464],["Air Fryer 3",2146707,404],["Mechanical Keyboard 1",1613002,448],["Mixer Grinder 3",1544664,287],["Dumbbell Set 1",1339315,457],["Hair Dryer 3",1050728,561],["Laptop Stand 2",982442,776]],"cl":{"risk":[["CUST02946","Aarav Joshi","Noida","Consumer",5,51474,150],["CUST02839","Rahul Singh","Coimbatore","Corporate",8,44150,133],["CUST00736","Aisha Williams","Delhi","Consumer",5,43086,108],["CUST01066","Vivaan Shah","Bhopal","Consumer",5,42160,175],["CUST01721","Liam Mehta","Bengaluru","Consumer",4,40988,128],["CUST00268","Olivia Kapoor","Gurugram","Corporate",4,40526,100],["CUST00531","Rohan Nair","Bhopal","Small Business",6,40397,164],["CUST02956","Pooja Williams","Jaipur","Consumer",7,38915,146],["CUST00861","Diya Das","Chandigarh","Small Business",5,38308,128],["CUST01249","Ishita Johnson","Patna","Consumer",6,38205,92],["CUST01412","Liam Singh","Pune","Corporate",5,38191,166],["CUST00055","Mia Williams","Nagpur","Corporate",5,37603,138],["CUST02463","Riya Singh","Ahmedabad","Corporate",3,36046,146],["CUST02802","Mia Reddy","Mumbai","Consumer",6,35559,170],["CUST01947","Aditya Singh","Ahmedabad","Consumer",6,34379,98],["CUST01056","Aarav Miller","Kochi","Consumer",7,33443,110],["CUST00898","Meera Malhotra","Nagpur","Consumer",7,33113,136],["CUST01647","Pooja Shah","Chennai","Corporate",4,32714,168],["CUST00121","Aarav Patel","Indore","Consumer",5,32498,178],["CUST01879","Kavya Kumar","Bhopal","Consumer",6,31865,173],["CUST02557","Diya Das","Delhi","Consumer",6,31859,152],["CUST02590","Kavya Brown","Nagpur","Corporate",4,30577,104],["CUST00617","Vivaan Kapoor","Delhi","Consumer",3,30552,175],["CUST01886","Liam Malhotra","Lucknow","Small Business",3,30454,160],["CUST01416","Kabir Brown","Chandigarh","Consumer",8,30451,112]],"lost":[["CUST00602","Diya Sharma","Chandigarh","Consumer",5,52484,338],["CUST02416","Simran Miller","Kochi","Consumer",6,49979,201],["CUST01870","Lucas Singh","Nagpur","Consumer",5,49040,187],["CUST02882","James Williams","Nagpur","Consumer",4,46950,390],["CUST00206","Lucas Kumar","Coimbatore","Consumer",6,43464,186],["CUST00123","Ananya Patel","Ahmedabad","Consumer",3,43302,330],["CUST00059","Kabir Reddy","Patna","Consumer",4,41539,294],["CUST02500","Ishita Nair","Kochi","Consumer",4,40645,241],["CUST02087","Priya Das","Surat","Small Business",4,39498,425],["CUST02081","Nisha Verma","Ahmedabad","Consumer",4,38919,297],["CUST00552","Mia Reddy","Jaipur","Corporate",4,38332,200],["CUST02809","Daniel Miller","Bhopal","Consumer",3,37795,181],["CUST02638","Ava Das","Kolkata","Consumer",4,37719,386],["CUST01118","Sneha Smith","Kochi","Corporate",5,37552,181],["CUST00845","Rohan Kumar","Patna","Small Business",4,35977,185],["CUST01743","Vivaan Williams","Coimbatore","Consumer",3,35308,200],["CUST01330","Sneha Johnson","Gurugram","Corporate",5,34816,184],["CUST00737","Olivia Kumar","Mumbai","Consumer",5,34575,225],["CUST00686","Noah Joshi","Hyderabad","Corporate",5,34310,228],["CUST01940","Pooja Gupta","Mumbai","Small Business",4,34266,246],["CUST01102","Diya Patel","Chennai","Corporate",4,34034,193],["CUST02057","Olivia Johnson","Surat","Consumer",5,33820,182],["CUST00962","Olivia Miller","Noida","Consumer",4,33808,356],["CUST02898","Emma Gupta","Patna","Consumer",3,33805,338],["CUST00507","Vivaan Miller","Chennai","Corporate",5,33739,243]]},"lead":[["CUST01567","Daniel Kapoor","Chennai","Corporate","2025-12-24",7],["CUST02538","James Smith","Chandigarh","Corporate","2025-12-22",9],["CUST02400","Ava Sharma","Patna","Consumer","2025-12-21",10],["CUST01657","Ishita Joshi","Coimbatore","Consumer","2025-12-19",12],["CUST00648","Lucas Sharma","Pune","Consumer","2025-12-15",16],["CUST02065","Noah Shah","Noida","Corporate","2025-12-14",17],["CUST01169","Riya Iyer","Ahmedabad","Consumer","2025-12-06",25],["CUST01210","Ishita Nair","Kochi","Consumer","2025-11-29",32]],"deals":[["Neha Verma","Corporate",12685,"neg","ORD000353"],["Arjun Miller","Corporate",12664,"neg","ORD002599"],["Rahul Mehta","Corporate",16862,"neg","ORD005828"],["Emma Malhotra","Corporate",14261,"neg","ORD004920"],["Ava Kapoor","Corporate",18232,"neg","ORD007081"],["Neha Nair","Small Business",18297,"close","ORD000358"],["Olivia Brown","Corporate",17048,"close","ORD004466"],["Priya Patel","Corporate",19303,"close","ORD002845"],["Arjun Verma","Small Business",17115,"close","ORD003825"],["Olivia Sharma","Small Business",20012,"close","ORD004379"],["Kavya Sharma","Small Business",18309,"won","ORD001484"],["Priya Sharma","Corporate",18341,"won","ORD000690"],["Liam Kapoor","Corporate",16623,"won","ORD005336"],["Sneha Smith","Small Business",16446,"won","ORD007904"],["Lucas Johnson","Corporate",12125,"won","ORD004607"],["Liam Reddy","Small Business",12727,"lost","ORD000954"],["Ananya Shah","Small Business",14939,"lost","ORD005561"],["Kabir Iyer","Corporate",26464,"lost","ORD000287"],["Emma Shah","Corporate",17614,"lost","ORD003379"],["Aisha Smith","Small Business",16773,"lost","ORD001194"],["Daniel Kapoor","Corporate",15306,"new","Est."],["James Smith","Corporate",15306,"new","Est."],["Noah Shah","Corporate",15306,"new","Est."],["Aarav Mehta","Corporate",15306,"new","Est."]]};
+const $=id=>document.getElementById(id),dg=$('dg');
+const f=n=>n>=1e7?'₹'+(n/1e7).toFixed(2)+' Cr':n>=1e5?'₹'+(n/1e5).toFixed(1)+' L':'₹'+Math.round(n).toLocaleString('en-IN');
+const n$=n=>n.toLocaleString('en-IN');
+let M=[];try{M=JSON.parse(localStorage.getItem('crm_leads')||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem('crm_leads',JSON.stringify(M))}catch(e){}};
+const STG=[['new','New lead'],['neg','Negotiation'],['close','Closing'],['won','Won'],['lost','Lost']];
+let deals=D.deals.map(x=>({n:x[0],s:x[1],v:x[2],st:x[3],id:x[4]}));
+M.forEach(m=>{if(m.v)deals.unshift({n:m.n,s:'Manual lead',v:m.v,st:'new',id:'Manual'})});
+let tab='risk',ch={};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+function kpis(){const k=D.K,open=D.S.new+M.length;
+$('k').innerHTML=[['Total revenue',f(k.rev),'Paid orders'],['Orders',n$(k.orders),k.ret+'% returned'],['Customers',n$(k.cust),n$(D.S.active)+' active'],['Avg order value',f(k.aov),'per paid order'],['Open leads',n$(open),M.length?M.length+' added by you':'not yet ordered'],['Pending payments',f(k.pend),'to collect']].map(a=>`<div class="c"><small>${a[0]}</small><b>${a[1]}</b><small>${a[2]}</small></div>`).join('')}
+function charts(){const t=css('--mut'),bd=css('--bd'),ac=css('--ac'),g=css('--g');
+Chart.defaults.color=t;Chart.defaults.font.size=11;Object.values(ch).forEach(c=>c.destroy());
+const rows=D.ch.map(r=>[r[0],r[1]+M.filter(m=>m.p==r[0]).length,r[2]]);
+const sc={x:{grid:{display:false}},y:{grid:{color:bd}}},o={responsive:true,maintainAspectRatio:false};
+ch.a=new Chart($('c1'),{type:'bar',data:{labels:rows.map(r=>r[0]),datasets:[{label:'Leads / orders',data:rows.map(r=>r[1]),backgroundColor:ac,borderRadius:4},{label:'Converted (paid)',data:rows.map(r=>r[2]),backgroundColor:g,borderRadius:4}]},options:{...o,scales:sc}});
+$('cv').innerHTML=rows.map(r=>`<span class="chip">${r[0]}: ${(r[2]/r[1]*100).toFixed(1)}% conversion</span>`).join('');
+const mo=D.m,lb=mo.map(x=>{const d=new Date(x[0]+'-01');return d.toLocaleString('en',{month:'short'})+" '"+String(d.getFullYear()).slice(2)});
+ch.b=new Chart($('c2'),{type:'line',data:{labels:lb,datasets:[{data:mo.map(x=>x[1]),borderColor:ac,backgroundColor:ac+'22',fill:true,tension:.3,pointRadius:2}]},options:{...o,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>f(c.parsed.y)}}},scales:{x:{grid:{display:false},ticks:{maxTicksLimit:8}},y:{grid:{color:bd},ticks:{callback:v=>f(v)}}}}});
+ch.c=new Chart($('c3'),{type:'bar',data:{labels:D.tp.map(x=>x[0]),datasets:[{data:D.tp.map(x=>x[1]),backgroundColor:ac,borderRadius:4}]},options:{...o,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>f(c.parsed.x)+' · '+D.tp[c.dataIndex][2]+' units'}}},scales:{x:{grid:{color:bd},ticks:{callback:v=>f(v),maxTicksLimit:5}},y:{grid:{display:false}}}}})}
+function leads(){const a=M.map(m=>[m.n,m.p,'Added '+m.d,'Hot',0,m.c||'']).reverse().concat(D.lead.map(l=>[l[1],l[3]+' · '+l[2],l[4],l[5],l[5],l[0]]));
+const bdg=d=>d<=7?'<span class="b bg">Hot</span>':d<=30?'<span class="b ba">Follow up</span>':'<span class="b br">Going cold</span>';
+$('lt').innerHTML='<tr><th>Lead</th><th>Source / segment</th><th>Signed up</th><th>Status</th></tr>'+a.slice(0,9).map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}${r[4]?' ('+r[4]+'d ago)':''}</td><td>${bdg(r[4])}</td></tr>`).join('')}
+function pipe(){$('pp').innerHTML=STG.map(([k,l])=>{const x=deals.filter(d=>d.st==k);return `<div class="col" data-k="${k}"><h3><span>${l} (${x.length})</span><b>${f(x.reduce((s,d)=>s+d.v,0))}</b></h3>${x.map(d=>`<div class="d" draggable="true" data-i="${deals.indexOf(d)}"><b>${f(d.v)}</b> ${d.n}<span>${d.s} · ${d.id}</span></div>`).join('')}</div>`}).join('');
+let cur=null;document.querySelectorAll('.d').forEach(e=>e.ondragstart=()=>cur=+e.dataset.i);
+document.querySelectorAll('.col').forEach(c=>{c.ondragover=e=>{e.preventDefault();c.classList.add('o')};c.ondragleave=()=>c.classList.remove('o');c.ondrop=e=>{e.preventDefault();if(cur!=null){deals[cur].st=c.dataset.k;pipe()}}})}
+function cust(){const L=D.cl[tab],tot=D.S[tab];
+$('tb').innerHTML=[['risk','At risk'],['lost','Lost']].map(([k,l])=>`<button class="${k==tab?'on':''}" onclick="tab='${k}';cust()">${l} (${n$(D.S[k])})</button>`).join('');
+$('ct').innerHTML='<tr><th>Customer</th><th>Segment</th><th>City</th><th>Orders</th><th>Lifetime value</th><th>Last order</th><th></th></tr>'+L.map(r=>`<tr><td><b>${r[1]}</b></td><td>${r[3]}</td><td>${r[2]}</td><td>${r[4]}</td><td>${f(r[5])}</td><td>${r[6]} days ago</td><td><span class="b ${tab=='risk'?'ba':'br'}">${tab=='risk'?'At risk':'Lost'}</span></td></tr>`).join('');
+$('cn').textContent=`Showing top 25 of ${n$(tot)} by lifetime value. At risk = last order 91–180 days ago; Lost = over 180 days ago.`}
+function op(){['fn','fp','fv'].forEach(i=>$(i).value='');dg.showModal()}
+function add(){const n=$('fn').value.trim();if(!n){$('fn').focus();return}
+M.push({n,c:$('fp').value,p:$('fl').value,v:+$('fv').value||0,d:new Date().toLocaleDateString('en-IN')});save();
+deals=D.deals.map(x=>({n:x[0],s:x[1],v:x[2],st:x[3],id:x[4]}));M.forEach(m=>{if(m.v)deals.unshift({n:m.n,s:'Manual lead',v:m.v,st:'new',id:'Manual'})});
+dg.close();kpis();charts();leads();pipe()}
+kpis();charts();leads();pipe();cust();
+matchMedia('(prefers-color-scheme:dark)').onchange=charts;
+</script></body></html>
